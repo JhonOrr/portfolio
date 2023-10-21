@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="first-item">
+                <a>LOGO</a>
+            </div>
+            <div class="hamburguer">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="menu-tab">
+                <ul>
+                    <li><a>Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a>Education</a></li>
+                    <li><a>Experience</a></li>
+                    <li><a>Certifications</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <section class="info">
+            <h2>Skills</h2>
+            <div class="card-container">
+                <div class="skill-card">
+                    <div class="container">
+                        <p class="subtitulo">Name</p>
+                        <p class="descripcion">HTML</p>
+                        <p class="subtitulo">Nivel</p>
+                        <p class="descripcion">Avanzado</p>
+                    </div>
+                    <figure>
+                        <img src="./images/html-5.png">
+                    </figure>
+                </div>
+                <div class="skill-card">
+                    <div class="container">
+                        <p class="subtitulo">Name</p>
+                        <p class="descripcion">CSS</p>
+                        <p class="subtitulo">Nivel</p>
+                        <p class="descripcion">Intermedio</p>
+                    </div>
+                    <figure>
+                        <img src="./images/css-3.png">
+                    </figure>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="container">
+                        <p class="subtitulo">Name</p>
+                        <p class="descripcion">Javascript</p>
+                        <p class="subtitulo">Nivel</p>
+                        <p class="descripcion">Avanzado</p>
+                    </div>
+                    <figure>
+                        <img src="./images/js.png">
+                    </figure>
+                </div>
+                <div class="skill-card">
+                    <div class="container">
+                        <p class="subtitulo">Name</p>
+                        <p class="descripcion">React.js</p>
+                        <p class="subtitulo">Nivel</p>
+                        <p class="descripcion">Avanzado</p>
+                    </div>
+                    <figure>
+                        <img src="./images/react.png">
+                    </figure>
+                </div>
+                <div class="skill-card">
+                    <div class="container">
+                        <p class="subtitulo">Name</p>
+                        <p class="descripcion">Python</p>
+                        <p class="subtitulo">Nivel</p>
+                        <p class="descripcion">Avanzado</p>
+                    </div>
+                    <figure>
+                        <img src="./images/python.png">
+                    </figure>
+                </div>
+                <div class="skill-card">
+                    <div class="container">
+                        <p class="subtitulo">Name</p>
+                        <p class="descripcion">Java</p>
+                        <p class="subtitulo">Nivel</p>
+                        <p class="descripcion">Avanzado</p>
+                    </div>
+                    <figure>
+                        <img src="./images/java.png">
+                    </figure>
+                </div>
+            </div>
+           
+        </section>
+    </main>
+    <script>
+        hamburguer = document.querySelector(".hamburguer");
+        hamburguer.onclick = function(){
+            navBar = document.querySelector(".menu-tab");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
