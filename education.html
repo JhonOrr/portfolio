@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./education.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <div class="first-item">
+          <a>LOGO</a>
+        </div>
+        <div class="hamburguer">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="menu-tab">
+          <ul>
+            <li><a>Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a>Education</a></li>
+            <li><a>Experience</a></li>
+            <li><a>Certifications</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="info">
+        <h2>Education</h2>
+        <div class="card-container">
+          <div class="skill-card">
+            <div class="container">
+              <p class="subtitulo">Degree</p>
+              <p class="descripcion">Student of Systems Engineering (8th semester)</p>
+
+              <p class="subtitulo">Institution</p>
+              <p class="descripcion">Universidad Peruana de Ciencias Aplicadas</p>
+
+              <p class="subtitulo">Year Graduated</p>
+              <p class="descripcion">2024</p>
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="container">
+              <p class="subtitulo">Degree</p>
+              <p class="descripcion">Bachelor of Chemical Engineering</p>
+
+              <p class="subtitulo">Institution</p>
+              <p class="descripcion">Universidad Nacional de Ingeniería</p>
+
+              <p class="subtitulo">Year Graduated</p>
+              <p class="descripcion">2019</p>
+            </div>
+            <!-- <figure>
+              <img src="./images/uni.png" />
+            </figure> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      hamburguer = document.querySelector(".hamburguer");
+      hamburguer.onclick = function () {
+        navBar = document.querySelector(".menu-tab");
+        navBar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

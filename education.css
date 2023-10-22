@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Inter&family=Oswald&display=swap');
+
+
+/* Heeader */
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+header, main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header{
+    background-color: #28192d;
+}
+
+.menu{
+
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-size: 16px;
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.first-item{
+    margin-right: auto;
+}
+
+.hamburguer{
+    display: block;
+    cursor: pointer;
+    
+}
+
+.hamburguer .line{
+    width: 30px;
+    height: 3px;
+    background: #f9f9f9;
+    margin: 6px 0;
+}
+
+.menu-tab{
+    height: 0px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #28192d;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.menu-tab ul li{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.menu-tab.active{
+    height: auto;
+}
+
+.menu-tab.active li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main */
+
+.info{
+    align-items: center;
+    color: #424242;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0 20px;
+    justify-content: center;
+    /* border: 2px solid blue */
+}
+
+.info h2{
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Cutive', serif;
+    margin: 40px auto;
+    /* border: 1px solid blue; */
+}
+.info > *{
+    /* margin: 0px 0; */
+    /* border: 1px solid blue; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card-container{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    gap: 40px;
+}
+
+.skill-card{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFEEC6;
+    /* width: 100%; */
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 30px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* margin: 25px 0; */
+}
+.descripcion{
+    font-size: 16px;
+}
+.subtitulo{
+    font-size: 12px;
+    font-weight: 700;
+}
+.descripcion, .subtitulo{
+    /* border: 1px solid black; */
+    /* margin: 15px 0; */
+    text-align: left;
+}
+
+.skill-card .container{
+    /* border: 1px solid black; */
+}
+
+.skill-card figure{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.skill-card figure img{
+    width: 120px;
+}
+
+@media screen and (min-width: 768px){
+    .menu, .info{
+        width: 720px;
+    }
+
+    .menu-tab{
+        position:static;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        display: flex;
+        background-color: inherit;
+    }
+    .menu-tab ul{
+        display: flex;
+    }
+    .menu-tab ul li{
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin-left: 24px;
+    }
+
+    
+    .hamburguer{
+        display: none;   
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu, .info{
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu, .info{
+        width: 1140px;
+    }
+}
+
+
+
+
+    
