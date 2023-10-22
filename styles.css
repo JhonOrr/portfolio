@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Inter&family=Oswald&display=swap');
+
+
 /* Heeader */
 *{
     margin: 0;
@@ -19,7 +22,7 @@ header, main{
     display: flex;
     font-size: 16px;
     height: 70px;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
 }
@@ -83,27 +86,36 @@ header, main{
 }
 
 .info h2{
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
+    font-family: 'Cutive', serif;
+    margin: 40px auto;
+    /* border: 1px solid blue; */
 }
 .info > *{
-    margin: 20px 0;
+    /* margin: 0px 0; */
     /* border: 1px solid blue; */
 }
 
 
+.card-container{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 40px;
+}
 
 .skill-card{
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
     background-color: #FFEEC6;
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
     border-radius: 25px;
     padding: 30px 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin: 25px 0;
+    /* margin: 25px 0; */
 }
 .descripcion{
     font-size: 20px;
